@@ -5,13 +5,16 @@
 > ## ЗАПУСКАТЬ СКРИПТЫ ОТ ПОЛЬЗОВАТЕЛЯ ROOT
 
 ### NGINX
-    # Установка Nginx
+   > #Установка Nginx
+
     sudo apt install nginx
  #
-    # Запуск Nginx
+   > #Запуск Nginx
+
     sudo systemctl start nginx
  # 
-    # Проверка статуса
+   > #Проверка статуса
+    
     sudo systemctl status nginx
  #
 
