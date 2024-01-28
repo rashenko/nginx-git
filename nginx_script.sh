@@ -11,5 +11,5 @@ if [ $? -eq 0 ]; then
         echo "Сервис Nginx настроен и готов к работе!"
         nginx -s reload
 else
-        echo "Возникла ошибка!"
+        echo "Возникла ошибка."
 fi
