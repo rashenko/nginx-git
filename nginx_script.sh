@@ -6,10 +6,10 @@ DIR2='/etc/nginx/sites-available/default'
 
 cp $DIR1 $DIR2
 echo "Конфиг default, Nginx сервиса скопирован по пути $DIR"
-nginx -t
+nginx -s reload
 if [ $? -eq 0 ]; then
         echo "Сервис Nginx настроен и готов к работе!"
         nginx -s reload
 else
-        echo "Возникла ошибка."
+        echo "Возникла ошибка!"
 fi
