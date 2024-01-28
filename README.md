@@ -12,23 +12,8 @@
     sudo systemctl start nginx
  # 
     # Проверка статуса
-    systemctl status nginx
+    sudo systemctl status nginx
  #
-### APACHE
-    # Установка Apache
-    apt install apache2
-
-#
-
-    # Запуск Apache
-    systemctl start apache2
-
-#
-
-    # Проверка статуса
-    systemctl status apache2
-
-#
 
 ### НАСТРОЙКА NGINX
 ### 1. Настраиваем статические ip адреса:
