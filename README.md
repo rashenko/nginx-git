@@ -18,16 +18,27 @@
     sudo systemctl status nginx
  #
 
+ ### Node Exporter
+
+   > #Скачиваем Node Exporter
+    
+    wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+#
+   > #Распаковка архивов
+   
+    tar xzvf node_exporter-*.t*gz
+#
+
 ### НАСТРОЙКА NGINX
 ### 1. Настраиваем статические ip адреса:
    
-* #### Запустить скрипт networkd_static_ip.sh, он настроит статический ip
+* #### Запустить скрипт [networkd_static_ip.sh](https://github.com/rashenko/nginx-git/blob/main/networkd_static_ip.sh), он настроит статический ip
 
 ### 2. Копируем конфиги nginx:
    
-* #### Запустить скрипт nginx_script.sh, он скопирует конфиг и перезапустит сервис nginx.
+* #### Запустить скрипт [nginx_script.sh](https://github.com/rashenko/nginx-git/blob/main/nginx_script.sh), он скопирует конфиг и перезапустит сервис nginx.
 
 
 ### 3. Установка node_exporter:
    
-* #### Запустить скрипт node_exporter.sh, он установит и   настроит node_exporter
+* #### Запустить скрипт [node_exporter.sh](https://github.com/rashenko/nginx-git/blob/main/node_exporter.sh), он установит и   настроит node_exporter
