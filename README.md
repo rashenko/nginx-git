@@ -41,7 +41,7 @@
 #
 > #Включаем модуль Ngnix для filebeat
 
-    filebeat modules enable nginx
+    sudo filebeat modules enable nginx
 #
 
 ### Настройка NGNIX
