@@ -18,7 +18,7 @@
     sudo systemctl status nginx
  #
 
- ### Node Exporter
+ ### NODE EXPORTER
 
    > #Скачиваем Node Exporter
     
@@ -29,7 +29,18 @@
     tar xzvf node_exporter-*.t*gz
 #
 
-### НАСТРОЙКА NGINX
+### FILEBEAT
+
+   > #Скачиваем Node Exporter
+
+    wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.9.1-amd64.deb
+    
+   > #Установка filebeat
+
+    sudo dpkg -i filebeat-8.9.1-amd64.deb
+#
+
+### Настройка сервисов
 ### 1. Настраиваем статические ip адреса:
    
 * #### Запустить скрипт [networkd_static_ip.sh](https://github.com/rashenko/nginx-git/blob/main/networkd_static_ip.sh), он настроит статический ip
@@ -42,3 +53,9 @@
 ### 3. Установка node_exporter:
    
 * #### Запустить скрипт [node_exporter.sh](https://github.com/rashenko/nginx-git/blob/main/node_exporter.sh), он установит и   настроит node_exporter
+
+### 4. Установка Filebeat:
+   
+* #### Запустить скрипт [filebeat.sh](https://github.com/rashenko/nginx-git/blob/main/filebeat.sh), он установит и   настроит node_exporter
+
+
