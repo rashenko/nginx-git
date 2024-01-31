@@ -34,10 +34,14 @@
    > #Скачиваем Node Exporter
 
     wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.9.1-amd64.deb
-    
+#    
    > #Установка filebeat
 
     sudo dpkg -i filebeat-8.9.1-amd64.deb
+#
+> #Включаем модуль Ngnix для filebeat
+
+    filebeat modules enable nginx
 #
 
 ### Настройка NGNIX
