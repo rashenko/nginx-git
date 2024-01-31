@@ -40,7 +40,7 @@
     sudo dpkg -i filebeat-8.9.1-amd64.deb
 #
 
-### Настройка сервисов
+### Настройка NGNIX
 ### 1. Настраиваем статические ip адреса:
    
 * #### Запустить скрипт [networkd_static_ip.sh](https://github.com/rashenko/nginx-git/blob/main/networkd_static_ip.sh), он настроит статический ip
