@@ -24,5 +24,8 @@ fi
 sed -i '/error:/,/enabled:/ s/enabled: .*/enabled: true/g' "$module_path"
 sed -i '/access:/,/enabled:/ s/enabled: .*/enabled: true/g' "$module_path"
 
-# Запуск сервиса
+# Запуск сервиса Filebeat
 systemctl restart filebeat
+
+# Проверяем статус сервиса Filebeat
+systemctl status filebeat
