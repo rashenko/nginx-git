@@ -28,7 +28,6 @@
    
     tar xzvf node_exporter-*.t*gz
 #
-#
    > #Добавляем пользователей
    
     useradd --no-create-home --shell /bin/false node_exporter
