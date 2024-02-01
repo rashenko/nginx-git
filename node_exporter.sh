@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Копируем конфиг службы node exporter
-cp /home/qqee/backend1-git/node_exporter.service /etc/systemd/system/node_exporter.service
+cp /home/qqee/nginx-git/node_exporter.service /etc/systemd/system/node_exporter.service
 
 # Перезапуск
 systemctl daemon-reload
