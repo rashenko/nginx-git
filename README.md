@@ -33,7 +33,7 @@
     useradd --no-create-home --shell /bin/false node_exporter
 #
 
-   > # Копируем файлы в /usr/local
+   > #Копируем файлы в /usr/local
 
     cp node_exporter-*.linux-amd64/node_exporter /usr/local/bin
 #    
