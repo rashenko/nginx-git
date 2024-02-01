@@ -2,7 +2,7 @@
 
 upstream backend {
         server 192.168.1.11 weight=2;
-        server 192.168.5.12;
+        server 192.168.1.12;
 }
 server  {
         listen 80 default_server;
